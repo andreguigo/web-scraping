@@ -17,6 +17,6 @@ foreach (HtmlNode node in htmlDoc.DocumentNode.SelectNodes("//div[@class='_evt']
         link = node.Attributes["href"].Value;
 
         if (!string.IsNullOrEmpty(news))
-            Console.WriteLine(news + " - " + link);
+            Console.WriteLine($"{news} \n {link} \n\n");
     }
 }
