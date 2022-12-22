@@ -9,7 +9,7 @@ htmlDoc.LoadHtml(response);
 string news = string.Empty;
 string link = string.Empty;
 
-foreach (HtmlNode node in htmlDoc.DocumentNode.SelectNodes("//div[@class='_evt']/a"))
+foreach (HtmlNode node in htmlDoc.DocumentNode.SelectNodes("//div[@class='_evt']/h2/a"))
 {
     if (node.Attributes.Count > 0)
     {
